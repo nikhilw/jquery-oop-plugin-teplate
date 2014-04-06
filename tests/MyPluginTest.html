@@ -1,0 +1,25 @@
+<html>
+<head>
+<!--<script type="text/javascript" src="../../scripts/jquery-1.5-d.js"></script>-->
+<!-- <script type="text/javascript" src="./MyPlugin.js"></script> -->
+<!-- <script type="text/javascript" src="./MyPluginApproach2.js"></script> -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="./MyPluginApproach3.1_Alone.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	//$("#testingDiv").myPlugin("update", {defaultTab : '1'});
+	$("#testingDiv").myPlugin({defaultTab : '1'});
+	//$("#testingDiv").myPlugin();
+	$("#testingDiv").myPlugin("update", {defaultTab : '3'});
+});
+</script>
+</head>
+<body>
+<div id="testingDiv">
+<ul>
+	<li>Element 1</li>
+	<li>Element 2</li>
+</ul>
+</div>
+</body>
+</html>
